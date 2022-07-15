@@ -1,0 +1,148 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+.header {
+	background: rgba(242, 120, 92, 0.7);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.flex {
+	display: flex;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.list-reset {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.btn-reset {
+	font-family: inherit;
+	background-color: transparent;
+	border: none;
+}
+
+.link-reset {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.header__container {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	user-select: none;
+}
+
+.nav__link {
+	color: white;
+}
+
+.nav__item:not(:last-child) {
+	margin-right: 15px;
+}
+
+.login__btn {
+	padding: 8px 15px;
+	border-radius: 7px;
+	font-size: 15px;
+	font-weight: 500;
+	color: white;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	background-color: #0D606F;
+	cursor: pointer;
+}
+
+.login__btn:hover {
+	background-color: #0f535f;
+}
+
+.hero__title {
+	text-align: center;
+}
+
+/* /SLIDER  */
+.slider-container {
+	position: relative;
+	max-width: 800px;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.slider-wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 50%;
+}
+
+.slider-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 1;
+	transition: ease 0.2s;
+}
+
+.slider-wrapper .opacity0 {
+	opacity: 0;
+}
+
+.slider__btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	border-right: 3px solid whitesmoke;
+	border-bottom: 3px solid whitesmoke;
+	cursor: pointer;
+	border-radius: 1px;
+}
+
+.btn-right {
+	right: 13px;
+	transform: rotate(-45deg);
+}
+
+.btn-left {
+	left: 13px;
+	transform: rotate(135deg);
+}
+/* /SLIDER  */
